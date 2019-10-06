@@ -1,0 +1,20 @@
+package main
+
+import (
+	"fmt"
+)
+
+type manzana int
+
+func main() {
+	var x manzana = 42
+	fmt.Println(x)
+	fmt.Printf("%T\n", x)
+
+	var y int
+	y = int(x)
+	fmt.Println(y)
+	fmt.Printf("%T", y)
+}
+
+//	fmt.Println("foo corrió -", e, "\n", e.(errorPer).info)
